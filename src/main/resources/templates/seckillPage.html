@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html   xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+<h1>小米平衡车  !!!  1元秒杀！！！</h1>
+
+<img width="200"   th:src="@{/img/car.jpg}" />
+<form id="msform" th:action="@{/doseckill}" enctype="application/x-www-form-urlencoded">
+	<input type="hidden" id="productid" name="productid" value="1101">
+	<!-- 商品id   productid -->
+	<input type="button"  id="miaosha_btn" name="seckill_btn" value="秒杀点我"/>
+</form>
+
+</body>
+<script  type="text/javascript" th:src="@{/script/jquery/jquery-3.1.0.js}"></script>
+<script  type="text/javascript">
+	$(function(){
+		$("#miaosha_btn").click(function(){
+			var url=$("#msform").attr("action");
+			//alert("======="+url);
+			$.post(url,$("#msform").serialize(),function(data){//  data后端返回的数据
+				if(data=="false"){  // true 还能抢   false 抢光了
+					alert("抢光了" );
+					$("#miaosha_btn").attr("disabled",true);
+				}
+			} );
+		})
+	})
+</script>
+</html>
