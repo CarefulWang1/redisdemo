@@ -17,6 +17,10 @@ public class RedisDemoApplication {
 
         System.out.println("=代码冲突===     master");
         System.out.println("==代码冲突  2222 branch==    ");
+        System.out.println("==代码冲突 远程库更新    ");
+        System.out.println("==代码冲突   远程库更新    ");
+        System.out.println("==代码冲突   远程库更新    ");
+        System.out.println("==代码冲突   远程库更新   ");
 
     }
 
