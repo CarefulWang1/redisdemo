@@ -13,9 +13,7 @@ public class RedisDemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(RedisDemoApplication.class, args);
 
-
-
-
+        System.out.println("====     abc");
 
 
     }
