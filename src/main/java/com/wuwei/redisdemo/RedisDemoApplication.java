@@ -14,6 +14,10 @@ public class RedisDemoApplication {
         SpringApplication.run(RedisDemoApplication.class, args);
 
 
+
+
+
+
     }
 
 }
