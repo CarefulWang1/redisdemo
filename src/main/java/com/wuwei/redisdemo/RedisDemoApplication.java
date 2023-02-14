@@ -16,6 +16,8 @@ public class RedisDemoApplication {
         System.out.println("====     abc");
 
         System.out.println("=代码冲突===     master");
+        System.out.println("==代码冲突  2222 branch==    ");
+
     }
 
 }
